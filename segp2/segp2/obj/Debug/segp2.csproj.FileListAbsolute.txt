@@ -1,0 +1,12 @@
+C:\Users\User\source\repos\segp2\segp2\bin\Debug\segp2.exe.config
+C:\Users\User\source\repos\segp2\segp2\bin\Debug\segp2.exe
+C:\Users\User\source\repos\segp2\segp2\bin\Debug\segp2.pdb
+C:\Users\User\source\repos\segp2\segp2\obj\Debug\segp2.csproj.AssemblyReference.cache
+C:\Users\User\source\repos\segp2\segp2\obj\Debug\segp2.Form1.resources
+C:\Users\User\source\repos\segp2\segp2\obj\Debug\segp2.Properties.Resources.resources
+C:\Users\User\source\repos\segp2\segp2\obj\Debug\segp2.csproj.GenerateResource.cache
+C:\Users\User\source\repos\segp2\segp2\obj\Debug\segp2.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\segp2\segp2\obj\Debug\segp2.exe
+C:\Users\User\source\repos\segp2\segp2\obj\Debug\segp2.pdb
+C:\Users\User\source\repos\segp2\segp2\bin\Debug\segp3_log.ldf
+C:\Users\User\source\repos\segp2\segp2\bin\Debug\segp3.mdf
