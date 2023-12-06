@@ -44,12 +44,6 @@ namespace segp2
 
         private void label3_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void button4_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -58,6 +52,12 @@ namespace segp2
             panel3.Visible = false;
             panel2.Visible = false;
             panel4.Visible = true;
+
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+
         }
 
         private void button5_Click(object sender, EventArgs e)
@@ -97,7 +97,7 @@ namespace segp2
 
             try
             {
-                String querry = "SELECT * FROM segp3.mdf WHERE username = '" + txt_username.Text + "' AND password = '" + txt_password.Text + "'";
+                String querry = "SELECT * FROM User WHERE username = '" + txt_username.Text + "' AND password = '" + txt_password.Text + "'";
                 SqlDataAdapter sda = new SqlDataAdapter(querry, conn);
 
                 DataTable dtable = new DataTable();
@@ -108,7 +108,7 @@ namespace segp2
                     username = txt_username.Text;
                     user_password = txt_password.Text;
 
-                    
+
                 }
                 else
                 {
@@ -151,6 +151,47 @@ namespace segp2
             {
                 this.Show();
             }
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel7_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button3_Click_1(object sender, EventArgs e)
+        {
+            DBConnection dbConn = DBConnection.getInstanceOfDBConnection();
+            DataSet datasetCompany = dbConn.getDataSet("select * From Product ");
+            dgvCompany.DataSource = datasetCompany.Tables[0];
+        }
+
+        private void dvgLocation_Click(object sender, EventArgs e)
+        {
+            DBConnection dbConn = DBConnection.getInstanceOfDBConnection();
+            DataSet datasetCompany = dbConn.getDataSet("select * From Location");
+            dgvCompany.DataSource = datasetCompany.Tables[0];
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            DBConnection dbConn = DBConnection.getInstanceOfDBConnection();
+            DataSet datasetCompany = dbConn.getDataSet("select * From Review");
+            dgvCompany.DataSource = datasetCompany.Tables[0];
         }
     }
 }
