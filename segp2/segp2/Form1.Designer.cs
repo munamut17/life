@@ -37,6 +37,8 @@
             this.button1 = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
             this.button_exit = new System.Windows.Forms.Button();
             this.button_clear = new System.Windows.Forms.Button();
             this.button_login = new System.Windows.Forms.Button();
@@ -47,6 +49,11 @@
             this.label2 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel7 = new System.Windows.Forms.Panel();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.button6 = new System.Windows.Forms.Button();
+            this.button_confirm = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.button4 = new System.Windows.Forms.Button();
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
@@ -55,25 +62,18 @@
             this.label5 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
             this.panel8 = new System.Windows.Forms.Panel();
+            this.panel9 = new System.Windows.Forms.Panel();
+            this.label15 = new System.Windows.Forms.Label();
             this.panel10 = new System.Windows.Forms.Panel();
+            this.button8 = new System.Windows.Forms.Button();
+            this.dvgLocation = new System.Windows.Forms.Button();
+            this.dvgProduct = new System.Windows.Forms.Button();
             this.loaddb = new System.Windows.Forms.Button();
             this.dgvCompany = new System.Windows.Forms.DataGridView();
             this.textBox11 = new System.Windows.Forms.TextBox();
             this.label16 = new System.Windows.Forms.Label();
             this.button5 = new System.Windows.Forms.Button();
-            this.panel9 = new System.Windows.Forms.Panel();
-            this.label15 = new System.Windows.Forms.Label();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.button_confirm = new System.Windows.Forms.Label();
-            this.button6 = new System.Windows.Forms.Button();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.dvgProduct = new System.Windows.Forms.Button();
-            this.dvgLocation = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -81,22 +81,24 @@
             this.panel4.SuspendLayout();
             this.panel7.SuspendLayout();
             this.panel8.SuspendLayout();
+            this.panel9.SuspendLayout();
             this.panel10.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCompany)).BeginInit();
-            this.panel9.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel2
             // 
+            this.panel2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.panel2.BackColor = System.Drawing.SystemColors.Control;
             this.panel2.BackgroundImage = global::segp2.Properties.Resources.green_nature_light_sunlight_wallpaper;
             this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel2.Controls.Add(this.label1);
             this.panel2.Controls.Add(this.panel1);
-            this.panel2.Location = new System.Drawing.Point(-1, 2);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Margin = new System.Windows.Forms.Padding(1);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1392, 625);
+            this.panel2.Size = new System.Drawing.Size(1319, 641);
             this.panel2.TabIndex = 1;
             // 
             // label1
@@ -203,6 +205,29 @@
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(289, 498);
             this.panel6.TabIndex = 0;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.ForeColor = System.Drawing.Color.ForestGreen;
+            this.label10.Location = new System.Drawing.Point(72, 412);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(140, 20);
+            this.label10.TabIndex = 9;
+            this.label10.Text = "Create an account";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.label9.Location = new System.Drawing.Point(57, 382);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(177, 20);
+            this.label9.TabIndex = 8;
+            this.label9.Text = "Don\'t have an account?";
             // 
             // button_exit
             // 
@@ -337,6 +362,62 @@
             this.panel7.TabIndex = 0;
             this.panel7.Paint += new System.Windows.Forms.PaintEventHandler(this.panel7_Paint);
             // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.label7.ForeColor = System.Drawing.Color.PaleGreen;
+            this.label7.Location = new System.Drawing.Point(82, 467);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(117, 20);
+            this.label7.TabIndex = 24;
+            this.label7.Text = "Back to LOGIN";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.label6.Location = new System.Drawing.Point(52, 447);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(192, 20);
+            this.label6.TabIndex = 23;
+            this.label6.Text = "Already have an account?";
+            // 
+            // button6
+            // 
+            this.button6.BackColor = System.Drawing.Color.Honeydew;
+            this.button6.FlatAppearance.BorderColor = System.Drawing.Color.Lime;
+            this.button6.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Lime;
+            this.button6.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Lime;
+            this.button6.ForeColor = System.Drawing.Color.ForestGreen;
+            this.button6.Location = new System.Drawing.Point(26, 389);
+            this.button6.Margin = new System.Windows.Forms.Padding(1);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(244, 44);
+            this.button6.TabIndex = 22;
+            this.button6.Text = "Clear";
+            this.button6.UseVisualStyleBackColor = false;
+            this.button6.Click += new System.EventHandler(this.button6_Click_1);
+            // 
+            // button_confirm
+            // 
+            this.button_confirm.AutoSize = true;
+            this.button_confirm.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_confirm.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.button_confirm.Location = new System.Drawing.Point(20, 243);
+            this.button_confirm.Name = "button_confirm";
+            this.button_confirm.Size = new System.Drawing.Size(136, 20);
+            this.button_confirm.TabIndex = 21;
+            this.button_confirm.Text = "Confirm password";
+            // 
+            // textBox1
+            // 
+            this.textBox1.BackColor = System.Drawing.Color.Honeydew;
+            this.textBox1.Location = new System.Drawing.Point(25, 276);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(245, 26);
+            this.textBox1.TabIndex = 20;
+            // 
             // button4
             // 
             this.button4.BackColor = System.Drawing.Color.ForestGreen;
@@ -423,13 +504,33 @@
             // 
             this.panel8.BackgroundImage = global::segp2.Properties.Resources.green_nature_light_sunlight_wallpaper;
             this.panel8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel8.Controls.Add(this.panel10);
             this.panel8.Controls.Add(this.panel9);
+            this.panel8.Controls.Add(this.panel10);
             this.panel8.Location = new System.Drawing.Point(12, 14);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(1390, 631);
             this.panel8.TabIndex = 1;
             this.panel8.Paint += new System.Windows.Forms.PaintEventHandler(this.panel8_Paint);
+            // 
+            // panel9
+            // 
+            this.panel9.BackColor = System.Drawing.Color.Honeydew;
+            this.panel9.Controls.Add(this.label15);
+            this.panel9.Font = new System.Drawing.Font("Stencil", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.panel9.ForeColor = System.Drawing.Color.ForestGreen;
+            this.panel9.Location = new System.Drawing.Point(48, 72);
+            this.panel9.Name = "panel9";
+            this.panel9.Size = new System.Drawing.Size(168, 41);
+            this.panel9.TabIndex = 0;
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(31, 6);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(101, 22);
+            this.label15.TabIndex = 0;
+            this.label15.Text = "CitiSoft";
             // 
             // panel10
             // 
@@ -446,6 +547,36 @@
             this.panel10.Size = new System.Drawing.Size(1026, 512);
             this.panel10.TabIndex = 1;
             this.panel10.Paint += new System.Windows.Forms.PaintEventHandler(this.panel10_Paint);
+            // 
+            // button8
+            // 
+            this.button8.Location = new System.Drawing.Point(905, 234);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(70, 48);
+            this.button8.TabIndex = 7;
+            this.button8.Text = "Show By Rating";
+            this.button8.UseVisualStyleBackColor = true;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
+            // 
+            // dvgLocation
+            // 
+            this.dvgLocation.Location = new System.Drawing.Point(755, 234);
+            this.dvgLocation.Name = "dvgLocation";
+            this.dvgLocation.Size = new System.Drawing.Size(75, 23);
+            this.dvgLocation.TabIndex = 6;
+            this.dvgLocation.Text = "Show By Location";
+            this.dvgLocation.UseVisualStyleBackColor = true;
+            this.dvgLocation.Click += new System.EventHandler(this.dvgLocation_Click);
+            // 
+            // dvgProduct
+            // 
+            this.dvgProduct.Location = new System.Drawing.Point(873, 164);
+            this.dvgProduct.Name = "dvgProduct";
+            this.dvgProduct.Size = new System.Drawing.Size(117, 36);
+            this.dvgProduct.TabIndex = 5;
+            this.dvgProduct.Text = "show software";
+            this.dvgProduct.UseVisualStyleBackColor = true;
+            this.dvgProduct.Click += new System.EventHandler(this.button3_Click_1);
             // 
             // loaddb
             // 
@@ -503,144 +634,16 @@
             this.button5.UseVisualStyleBackColor = false;
             this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
-            // panel9
-            // 
-            this.panel9.BackColor = System.Drawing.Color.Honeydew;
-            this.panel9.Controls.Add(this.label15);
-            this.panel9.Font = new System.Drawing.Font("Stencil", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panel9.ForeColor = System.Drawing.Color.ForestGreen;
-            this.panel9.Location = new System.Drawing.Point(48, 72);
-            this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(168, 41);
-            this.panel9.TabIndex = 0;
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(31, 6);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(101, 22);
-            this.label15.TabIndex = 0;
-            this.label15.Text = "CitiSoft";
-            // 
-            // textBox1
-            // 
-            this.textBox1.BackColor = System.Drawing.Color.Honeydew;
-            this.textBox1.Location = new System.Drawing.Point(25, 276);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(245, 26);
-            this.textBox1.TabIndex = 20;
-            // 
-            // button_confirm
-            // 
-            this.button_confirm.AutoSize = true;
-            this.button_confirm.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_confirm.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.button_confirm.Location = new System.Drawing.Point(20, 243);
-            this.button_confirm.Name = "button_confirm";
-            this.button_confirm.Size = new System.Drawing.Size(136, 20);
-            this.button_confirm.TabIndex = 21;
-            this.button_confirm.Text = "Confirm password";
-            // 
-            // button6
-            // 
-            this.button6.BackColor = System.Drawing.Color.Honeydew;
-            this.button6.FlatAppearance.BorderColor = System.Drawing.Color.Lime;
-            this.button6.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Lime;
-            this.button6.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Lime;
-            this.button6.ForeColor = System.Drawing.Color.ForestGreen;
-            this.button6.Location = new System.Drawing.Point(26, 389);
-            this.button6.Margin = new System.Windows.Forms.Padding(1);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(244, 44);
-            this.button6.TabIndex = 22;
-            this.button6.Text = "Clear";
-            this.button6.UseVisualStyleBackColor = false;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label6.Location = new System.Drawing.Point(52, 447);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(192, 20);
-            this.label6.TabIndex = 23;
-            this.label6.Text = "Already have an account?";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.label7.ForeColor = System.Drawing.Color.PaleGreen;
-            this.label7.Location = new System.Drawing.Point(82, 467);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(117, 20);
-            this.label7.TabIndex = 24;
-            this.label7.Text = "Back to LOGIN";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label9.Location = new System.Drawing.Point(57, 382);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(177, 20);
-            this.label9.TabIndex = 8;
-            this.label9.Text = "Don\'t have an account?";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.ForeColor = System.Drawing.Color.ForestGreen;
-            this.label10.Location = new System.Drawing.Point(72, 412);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(140, 20);
-            this.label10.TabIndex = 9;
-            this.label10.Text = "Create an account";
-            // 
-            // dvgProduct
-            // 
-            this.dvgProduct.Location = new System.Drawing.Point(873, 164);
-            this.dvgProduct.Name = "dvgProduct";
-            this.dvgProduct.Size = new System.Drawing.Size(117, 36);
-            this.dvgProduct.TabIndex = 5;
-            this.dvgProduct.Text = "show software";
-            this.dvgProduct.UseVisualStyleBackColor = true;
-            this.dvgProduct.Click += new System.EventHandler(this.button3_Click_1);
-            // 
-            // dvgLocation
-            // 
-            this.dvgLocation.Location = new System.Drawing.Point(755, 234);
-            this.dvgLocation.Name = "dvgLocation";
-            this.dvgLocation.Size = new System.Drawing.Size(75, 23);
-            this.dvgLocation.TabIndex = 6;
-            this.dvgLocation.Text = "Show By Location";
-            this.dvgLocation.UseVisualStyleBackColor = true;
-            this.dvgLocation.Click += new System.EventHandler(this.dvgLocation_Click);
-            // 
-            // button8
-            // 
-            this.button8.Location = new System.Drawing.Point(905, 234);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(70, 48);
-            this.button8.TabIndex = 7;
-            this.button8.Text = "Show By Rating";
-            this.button8.UseVisualStyleBackColor = true;
-            this.button8.Click += new System.EventHandler(this.button8_Click);
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1319, 641);
             this.Controls.Add(this.panel5);
-            this.Controls.Add(this.panel8);
-            this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel3);
+            this.Controls.Add(this.panel8);
+            this.Controls.Add(this.panel2);
             this.Margin = new System.Windows.Forms.Padding(1);
             this.Name = "Form1";
             this.Text = "Form1";
@@ -656,11 +659,11 @@
             this.panel7.ResumeLayout(false);
             this.panel7.PerformLayout();
             this.panel8.ResumeLayout(false);
+            this.panel9.ResumeLayout(false);
+            this.panel9.PerformLayout();
             this.panel10.ResumeLayout(false);
             this.panel10.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCompany)).EndInit();
-            this.panel9.ResumeLayout(false);
-            this.panel9.PerformLayout();
             this.ResumeLayout(false);
 
         }

@@ -9,6 +9,9 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 using System.Data.Common;
+using Microsoft.Win32;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
+using System.Xml.Linq;
 
 namespace segp2
 {
@@ -57,7 +60,7 @@ namespace segp2
 
         private void button4_Click(object sender, EventArgs e)
         {
-
+         
         }
 
         private void button5_Click(object sender, EventArgs e)
@@ -165,7 +168,24 @@ namespace segp2
 
         private void panel7_Paint(object sender, PaintEventArgs e)
         {
+            string username = textBox3.Text;
+            string password = textBox6.Text;
+            string Com_Password = textBox1.Text;
 
+            if (string.IsNullOrEmpty(username) || string.IsNullOrEmpty(password) || string.IsNullOrEmpty(Com_Password))
+            {
+                MessageBox.Show("All fields are required.");
+                return;
+            }
+
+            if (!password.Equals(Com_Password))
+            {
+                MessageBox.Show("Passwords do not match.");
+                return;
+            }
+            textBox3.Clear();
+            textBox6.Clear();
+            textBox1.Clear();
         }
 
         private void label5_Click(object sender, EventArgs e)
@@ -192,6 +212,18 @@ namespace segp2
             DBConnection dbConn = DBConnection.getInstanceOfDBConnection();
             DataSet datasetCompany = dbConn.getDataSet("select * From Review");
             dgvCompany.DataSource = datasetCompany.Tables[0];
+        }
+
+        private void button6_Click_1(object sender, EventArgs e)
+        {
+            string username = textBox3.Text;
+            string password = textBox6.Text;
+            string Com_Password = textBox1.Text;
+
+            
+            textBox3.Clear();
+            textBox6.Clear();
+            textBox1.Clear();
         }
     }
 }
